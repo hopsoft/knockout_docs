@@ -23,8 +23,8 @@ cp -R /tmp/jekyll/* ./
 git add -A .
 git commit -m "Site published on $(date)"
 git push origin gh-pages
-git checkout source
-git push origin source
+git checkout master
+git push origin master
 git clean -f -d
 rm -rf /tmp/jekyll
 echo "Site published successfully."
