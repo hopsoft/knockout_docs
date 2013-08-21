@@ -1,6 +1,6 @@
-# KnockoutJS Docs
+# Knockout Docs
 
-This is a Github pages project for hosting API docs for KnockoutJS generated with Doccu.
+This is a Github pages project for hosting API docs for Knockout.js generated with Doccu.
 
 ## Generate Docs
 
@@ -15,7 +15,7 @@ This is a Github pages project for hosting API docs for KnockoutJS generated wit
 
   1. `npm install -g doccu`
 
-* Clone KnockoutJS Docs & Generate
+* Clone Knockout Docs & Generate
 
   1. `git clone git@github.com:hopsoft/knockout_docs.git`
   1. `cd knockout_docs`
