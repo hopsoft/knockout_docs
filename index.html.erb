@@ -1,13 +1,20 @@
 ---
 layout: bootstrap
-title: KnockoutJS Docs
+title: Knockout Docs
 ---
 
 <h1 class="page-header">KnockoutJS Docs</h1>
 <p class="lead">
-  KnockoutJS documentation generated with docco.
+  Knockout.js documentation generated with docco.
   Hopefully this proves helpful.
 </p>
+
+<form id="search-form" class="form-inline pull-right" role="form">
+  <div class="form-group">
+    <input type="text" class="form-control" id="search_text" placeholder="Search">
+  </div>
+  <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>&nbsp; Search <small>with Google</small></button>
+</form>
 
 <ul class="nav nav-tabs">
   <% @versions.each do |version, _| %>
@@ -37,3 +44,4 @@ title: KnockoutJS Docs
     </div>
   <% end %>
 </div>
+

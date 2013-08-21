@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 <style type="text/css">
-//body { margin: 20px; }
+.gsc-control-cse { visibility: hidden; height: 0px; width: 0px; position: absolute; top: -10000px; left: 0px; }
 </style>
 </head>
 <body>
@@ -26,5 +26,35 @@
 
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<div class="pull-right">
+  <script>
+    (function() {
+      var cx = '017320131516896405438:haitwa2asiq';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//www.google.com/cse/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
+  <gcse:search></gcse:search>
+</div>
+<script type="text/javascript">
+(function ($) {
+  function init() {
+    $("#search-form").on("submit", function (event) {
+      event.preventDefault();
+      $(".gsc-input[name=search]").val($("#search-form").find("input[type=text]").val());
+      $(".gsc-search-button").find("input").trigger("click");
+      return false;
+    });
+  }
+
+  $(document).on("ready", init);
+}(jQuery));
+</script>
+
 </body>
 </html>
