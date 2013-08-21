@@ -17,7 +17,7 @@ This is a Github pages project for hosting API docs for KnockoutJS generated wit
 
 * Clone KnockoutJS Docs & Generate
 
-  1. `git clone ...`
+  1. `git clone git@github.com:hopsoft/knockout_docs.git`
   1. `cd knockout_docs`
   1. `git checkout source`
   1. `docco -o ./docco/TAGNAME /path/to/knockout/src/**/*.js`
