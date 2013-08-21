@@ -21,7 +21,7 @@ def name(file)
 end
 
 def url(file, version)
-  "/docco/#{version}/#{file}"
+  "docco/#{version}/#{file}"
 end
 
 def current?(version)
