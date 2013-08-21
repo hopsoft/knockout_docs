@@ -17,7 +17,7 @@ def id(version)
 end
 
 def name(file)
-  file.sub(/\.html\z/, "")
+  file.sub(/\.html\z/, ".js")
 end
 
 def url(file, version)
