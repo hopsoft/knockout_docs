@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>KnockoutJS Docs</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<style type="text/css">
+//body { margin: 20px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="site">
+    <h1 class="page-header">KnockoutJS Docs</h1>
+<p class="lead">
+  KnockoutJS documentation generated with docco.
+  Hopefully this proves helpful.
+</p>
+
+<ul class="nav nav-tabs">
+  <% @versions.each do |version, _| %>
+    <li class="<%= current?(version) ? "active" : nil %>">
+      <a href="#<%= id(version) %>" data-toggle='tab'>
+        <span class="label <%= current?(version) ? "label-info" : "label-default" %>"><%= version %></span>
+        Knockout
+      </a>
+    </li>
+  <% end %>
+</ul>
+
+<div class="tab-content">
+  <% @versions.each do |version, files| %>
+    <div id="<%= id(version) %>" class="tab-pane <%= current?(version) ? "active" : nil %>">
+      <br />
+      <div class="panel <%= current?(version) ? "panel-info" : "panel-default" %>">
+        <div class="panel-heading"><%= version %> Files</div>
+        <div class="panel-body">
+          <ul>
+            <% files.each do |file| %>
+              <li><a href="<%= url(file, version) %>"><%= name(file) %></a></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+
+    <div class="footer">
+      Courtesy of:<br />
+      <a href="http://github.com/hopsoft/">github.com/hopsoft</a><br />
+      <a href="http://twitter.com/hopsoft/">twitter.com/hopsoft</a><br />
+    </div>
+  </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

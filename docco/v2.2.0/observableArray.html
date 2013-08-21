@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>observableArray.js</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" media="all" href="docco.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+      <ul id="jump_to">
+        <li>
+          <a class="large" href="javascript:void(0);">Jump To &hellip;</a>
+          <a class="small" href="javascript:void(0);">+</a>
+          <div id="jump_wrapper">
+          <div id="jump_page">
+            
+              
+              <a class="source" href="bindingAttributeSyntax.html">
+                bindingAttributeSyntax.js
+              </a>
+            
+              
+              <a class="source" href="bindingProvider.html">
+                bindingProvider.js
+              </a>
+            
+              
+              <a class="source" href="attr.html">
+                attr.js
+              </a>
+            
+              
+              <a class="source" href="checked.html">
+                checked.js
+              </a>
+            
+              
+              <a class="source" href="click.html">
+                click.js
+              </a>
+            
+              
+              <a class="source" href="css.html">
+                css.js
+              </a>
+            
+              
+              <a class="source" href="enableDisable.html">
+                enableDisable.js
+              </a>
+            
+              
+              <a class="source" href="event.html">
+                event.js
+              </a>
+            
+              
+              <a class="source" href="foreach.html">
+                foreach.js
+              </a>
+            
+              
+              <a class="source" href="hasfocus.html">
+                hasfocus.js
+              </a>
+            
+              
+              <a class="source" href="html.html">
+                html.js
+              </a>
+            
+              
+              <a class="source" href="ifIfnotWith.html">
+                ifIfnotWith.js
+              </a>
+            
+              
+              <a class="source" href="options.html">
+                options.js
+              </a>
+            
+              
+              <a class="source" href="selectedOptions.html">
+                selectedOptions.js
+              </a>
+            
+              
+              <a class="source" href="style.html">
+                style.js
+              </a>
+            
+              
+              <a class="source" href="submit.html">
+                submit.js
+              </a>
+            
+              
+              <a class="source" href="text.html">
+                text.js
+              </a>
+            
+              
+              <a class="source" href="uniqueName.html">
+                uniqueName.js
+              </a>
+            
+              
+              <a class="source" href="value.html">
+                value.js
+              </a>
+            
+              
+              <a class="source" href="visible.html">
+                visible.js
+              </a>
+            
+              
+              <a class="source" href="arrayToDomNodeChildren.html">
+                arrayToDomNodeChildren.js
+              </a>
+            
+              
+              <a class="source" href="compareArrays.html">
+                compareArrays.js
+              </a>
+            
+              
+              <a class="source" href="expressionRewriting.html">
+                expressionRewriting.js
+              </a>
+            
+              
+              <a class="source" href="selectExtensions.html">
+                selectExtensions.js
+              </a>
+            
+              
+              <a class="source" href="google-closure-compiler-utils.html">
+                google-closure-compiler-utils.js
+              </a>
+            
+              
+              <a class="source" href="memoization.html">
+                memoization.js
+              </a>
+            
+              
+              <a class="source" href="namespace.html">
+                namespace.js
+              </a>
+            
+              
+              <a class="source" href="dependencyDetection.html">
+                dependencyDetection.js
+              </a>
+            
+              
+              <a class="source" href="dependentObservable.html">
+                dependentObservable.js
+              </a>
+            
+              
+              <a class="source" href="extenders.html">
+                extenders.js
+              </a>
+            
+              
+              <a class="source" href="mappingHelpers.html">
+                mappingHelpers.js
+              </a>
+            
+              
+              <a class="source" href="observable.html">
+                observable.js
+              </a>
+            
+              
+              <a class="source" href="observableArray.html">
+                observableArray.js
+              </a>
+            
+              
+              <a class="source" href="subscribable.html">
+                subscribable.js
+              </a>
+            
+              
+              <a class="source" href="jqueryTmplTemplateEngine.html">
+                jqueryTmplTemplateEngine.js
+              </a>
+            
+              
+              <a class="source" href="nativeTemplateEngine.html">
+                nativeTemplateEngine.js
+              </a>
+            
+              
+              <a class="source" href="templateEngine.html">
+                templateEngine.js
+              </a>
+            
+              
+              <a class="source" href="templateRewriting.html">
+                templateRewriting.js
+              </a>
+            
+              
+              <a class="source" href="templateSources.html">
+                templateSources.js
+              </a>
+            
+              
+              <a class="source" href="templating.html">
+                templating.js
+              </a>
+            
+              
+              <a class="source" href="utils.domData.html">
+                utils.domData.js
+              </a>
+            
+              
+              <a class="source" href="utils.domManipulation.html">
+                utils.domManipulation.js
+              </a>
+            
+              
+              <a class="source" href="utils.domNodeDisposal.html">
+                utils.domNodeDisposal.js
+              </a>
+            
+              
+              <a class="source" href="utils.html">
+                utils.js
+              </a>
+            
+              
+              <a class="source" href="version.html">
+                version.js
+              </a>
+            
+              
+              <a class="source" href="virtualElements.html">
+                virtualElements.js
+              </a>
+            
+          </div>
+        </li>
+      </ul>
+    
+    <ul class="sections">
+        
+          <li id="title">
+              <div class="annotation">
+                  <h1>observableArray.js</h1>
+              </div>
+          </li>
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>ko.observableArray = <span class="function"><span class="keyword">function</span> <span class="params">(initialValues)</span> {</span>
+    <span class="keyword">if</span> (arguments.length == <span class="number">0</span>) {</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <p>Zero-parameter constructor initializes to empty array</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        initialValues = [];
+    }
+    <span class="keyword">if</span> ((initialValues !== <span class="literal">null</span>) &amp;&amp; (initialValues !== <span class="literal">undefined</span>) &amp;&amp; !(<span class="string">'length'</span> <span class="keyword">in</span> initialValues))
+        <span class="keyword">throw</span> <span class="keyword">new</span> Error(<span class="string">"The argument passed when initializing an observable array must be an array, or null, or undefined."</span>);
+
+    <span class="keyword">var</span> result = ko.observable(initialValues);
+    ko.utils.extend(result, ko.observableArray[<span class="string">'fn'</span>]);
+    <span class="keyword">return</span> result;
+}
+
+ko.observableArray[<span class="string">'fn'</span>] = {
+    <span class="string">'remove'</span>: <span class="function"><span class="keyword">function</span> <span class="params">(valueOrPredicate)</span> {</span>
+        <span class="keyword">var</span> underlyingArray = <span class="keyword">this</span>.peek();
+        <span class="keyword">var</span> removedValues = [];
+        <span class="keyword">var</span> predicate = <span class="keyword">typeof</span> valueOrPredicate == <span class="string">"function"</span> ? valueOrPredicate : <span class="function"><span class="keyword">function</span> <span class="params">(value)</span> {</span> <span class="keyword">return</span> value === valueOrPredicate; };
+        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; underlyingArray.length; i++) {
+            <span class="keyword">var</span> value = underlyingArray[i];
+            <span class="keyword">if</span> (predicate(value)) {
+                <span class="keyword">if</span> (removedValues.length === <span class="number">0</span>) {
+                    <span class="keyword">this</span>.valueWillMutate();
+                }
+                removedValues.push(value);
+                underlyingArray.splice(i, <span class="number">1</span>);
+                i--;
+            }
+        }
+        <span class="keyword">if</span> (removedValues.length) {
+            <span class="keyword">this</span>.valueHasMutated();
+        }
+        <span class="keyword">return</span> removedValues;
+    },
+
+    <span class="string">'removeAll'</span>: <span class="function"><span class="keyword">function</span> <span class="params">(arrayOfValues)</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-3">&#182;</a>
+              </div>
+              <p>If you passed zero args, we remove everything</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        <span class="keyword">if</span> (arrayOfValues === <span class="literal">undefined</span>) {
+            <span class="keyword">var</span> underlyingArray = <span class="keyword">this</span>.peek();
+            <span class="keyword">var</span> allValues = underlyingArray.slice(<span class="number">0</span>);
+            <span class="keyword">this</span>.valueWillMutate();
+            underlyingArray.splice(<span class="number">0</span>, underlyingArray.length);
+            <span class="keyword">this</span>.valueHasMutated();
+            <span class="keyword">return</span> allValues;
+        }</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-4">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-4">&#182;</a>
+              </div>
+              <p>If you passed an arg, we interpret it as an array of entries to remove</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        <span class="keyword">if</span> (!arrayOfValues)
+            <span class="keyword">return</span> [];
+        <span class="keyword">return</span> <span class="keyword">this</span>[<span class="string">'remove'</span>](<span class="function"><span class="keyword">function</span> <span class="params">(value)</span> {</span>
+            <span class="keyword">return</span> ko.utils.arrayIndexOf(arrayOfValues, value) &gt;= <span class="number">0</span>;
+        });
+    },
+
+    <span class="string">'destroy'</span>: <span class="function"><span class="keyword">function</span> <span class="params">(valueOrPredicate)</span> {</span>
+        <span class="keyword">var</span> underlyingArray = <span class="keyword">this</span>.peek();
+        <span class="keyword">var</span> predicate = <span class="keyword">typeof</span> valueOrPredicate == <span class="string">"function"</span> ? valueOrPredicate : <span class="function"><span class="keyword">function</span> <span class="params">(value)</span> {</span> <span class="keyword">return</span> value === valueOrPredicate; };
+        <span class="keyword">this</span>.valueWillMutate();
+        <span class="keyword">for</span> (<span class="keyword">var</span> i = underlyingArray.length - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) {
+            <span class="keyword">var</span> value = underlyingArray[i];
+            <span class="keyword">if</span> (predicate(value))
+                underlyingArray[i][<span class="string">"_destroy"</span>] = <span class="literal">true</span>;
+        }
+        <span class="keyword">this</span>.valueHasMutated();
+    },
+
+    <span class="string">'destroyAll'</span>: <span class="function"><span class="keyword">function</span> <span class="params">(arrayOfValues)</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-5">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-5">&#182;</a>
+              </div>
+              <p>If you passed zero args, we destroy everything</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        <span class="keyword">if</span> (arrayOfValues === <span class="literal">undefined</span>)
+            <span class="keyword">return</span> <span class="keyword">this</span>[<span class="string">'destroy'</span>](<span class="keyword">function</span>() { <span class="keyword">return</span> <span class="literal">true</span> });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-6">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-6">&#182;</a>
+              </div>
+              <p>If you passed an arg, we interpret it as an array of entries to destroy</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        <span class="keyword">if</span> (!arrayOfValues)
+            <span class="keyword">return</span> [];
+        <span class="keyword">return</span> <span class="keyword">this</span>[<span class="string">'destroy'</span>](<span class="function"><span class="keyword">function</span> <span class="params">(value)</span> {</span>
+            <span class="keyword">return</span> ko.utils.arrayIndexOf(arrayOfValues, value) &gt;= <span class="number">0</span>;
+        });
+    },
+
+    <span class="string">'indexOf'</span>: <span class="function"><span class="keyword">function</span> <span class="params">(item)</span> {</span>
+        <span class="keyword">var</span> underlyingArray = <span class="keyword">this</span>();
+        <span class="keyword">return</span> ko.utils.arrayIndexOf(underlyingArray, item);
+    },
+
+    <span class="string">'replace'</span>: <span class="keyword">function</span>(oldItem, newItem) {
+        <span class="keyword">var</span> index = <span class="keyword">this</span>[<span class="string">'indexOf'</span>](oldItem);
+        <span class="keyword">if</span> (index &gt;= <span class="number">0</span>) {
+            <span class="keyword">this</span>.valueWillMutate();
+            <span class="keyword">this</span>.peek()[index] = newItem;
+            <span class="keyword">this</span>.valueHasMutated();
+        }
+    }
+}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-7">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-7">&#182;</a>
+              </div>
+              <p>Populate ko.observableArray.fn with read/write functions from native arrays
+Important: Do not add any additional functions here that may reasonably be used to <em>read</em> data from the array
+because we&#39;ll eval them without causing subscriptions, so ko.computed output could end up getting stale</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>ko.utils.arrayForEach([<span class="string">"pop"</span>, <span class="string">"push"</span>, <span class="string">"reverse"</span>, <span class="string">"shift"</span>, <span class="string">"sort"</span>, <span class="string">"splice"</span>, <span class="string">"unshift"</span>], <span class="function"><span class="keyword">function</span> <span class="params">(methodName)</span> {</span>
+    ko.observableArray[<span class="string">'fn'</span>][methodName] = <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-8">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-8">&#182;</a>
+              </div>
+              <p>Use &quot;peek&quot; to avoid creating a subscription in any computed that we&#39;re executing in the context of
+(for consistency with mutating regular observables)</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        <span class="keyword">var</span> underlyingArray = <span class="keyword">this</span>.peek();
+        <span class="keyword">this</span>.valueWillMutate();
+        <span class="keyword">var</span> methodCallResult = underlyingArray[methodName].apply(underlyingArray, arguments);
+        <span class="keyword">this</span>.valueHasMutated();
+        <span class="keyword">return</span> methodCallResult;
+    };
+});</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-9">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-9">&#182;</a>
+              </div>
+              <p>Populate ko.observableArray.fn with read-only functions from native arrays</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>ko.utils.arrayForEach([<span class="string">"slice"</span>], <span class="function"><span class="keyword">function</span> <span class="params">(methodName)</span> {</span>
+    ko.observableArray[<span class="string">'fn'</span>][methodName] = <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+        <span class="keyword">var</span> underlyingArray = <span class="keyword">this</span>();
+        <span class="keyword">return</span> underlyingArray[methodName].apply(underlyingArray, arguments);
+    };
+});
+
+ko.exportSymbol(<span class="string">'observableArray'</span>, ko.observableArray);</pre></div></div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>
