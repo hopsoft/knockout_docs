@@ -21,7 +21,4 @@ This is a Github pages project for hosting API docs for Knockout.js generated wi
   1. `cd knockout_docs`
   1. `git checkout source`
   1. `docco -o ./docco/TAGNAME /path/to/knockout/src/**/*.js`
-  1. `./bin/index`
-  1. `./bin/sitemap`
-  1. `git commit -am "Generated new docs on $(date)"`
   1. `./bin/publish`
