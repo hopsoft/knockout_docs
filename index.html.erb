@@ -1,0 +1,39 @@
+---
+layout: bootstrap
+title: KnockoutJS Docs
+---
+
+<h1 class="page-header">KnockoutJS Docs</h1>
+<p class="lead">
+  KnockoutJS documentation generated with docco.
+  Hopefully this proves helpful.
+</p>
+
+<ul class="nav nav-tabs">
+  <% @versions.each do |version, _| %>
+    <li class="<%= current?(version) ? "active" : nil %>">
+      <a href="#<%= id(version) %>" data-toggle='tab'>
+        <span class="label <%= current?(version) ? "label-info" : "label-default" %>"><%= version %></span>
+        Knockout
+      </a>
+    </li>
+  <% end %>
+</ul>
+
+<div class="tab-content">
+  <% @versions.each do |version, files| %>
+    <div id="<%= id(version) %>" class="tab-pane <%= current?(version) ? "active" : nil %>">
+      <br />
+      <div class="panel <%= current?(version) ? "panel-info" : "panel-default" %>">
+        <div class="panel-heading"><%= version %> Files</div>
+        <div class="panel-body">
+          <ul>
+            <% files.each do |file| %>
+              <li><a href="<%= url(file, version) %>"><%= name(file) %></a></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
