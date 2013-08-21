@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+git checkout master
+./index
+./publish
+git add -A .
+git commit -m "Built index & sitemap on $(date)"
+
 jekyll build
 
 if [ $? -ne 0 ]; then
