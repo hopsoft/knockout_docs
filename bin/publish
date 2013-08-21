@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 git checkout master
-./index
-./publish
+./bin/index
+./bin/sitemap
 git add -A .
 git commit -m "Built index & sitemap on $(date)"
 
