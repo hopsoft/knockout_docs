@@ -10,10 +10,10 @@ fi
 mkdir /tmp/jekyll
 rm -rf /tmp/jekyll/*
 cp -R ./_site/* /tmp/jekyll
-git checkout master
+git checkout gh-pages
 
 if [ $? -ne 0 ]; then
-  echo "Unable to checkout master! Do you have uncommited changes?"
+  echo "Unable to checkout gh-pages! Do you have uncommited changes?"
   rm -rf /tmp/jekyll
   exit 1
 fi
@@ -22,7 +22,7 @@ rm -rf ./*
 cp -R /tmp/jekyll/* ./
 git add -A .
 git commit -m "Site published on $(date)"
-git push origin master
+git push origin gh-pages
 git checkout source
 git push origin source
 git clean -f -d
