@@ -30,5 +30,5 @@ end
 
 template = File.read(File.expand_path("../../index.html.erb", __FILE__))
 File.open(File.expand_path("../../index.html", __FILE__), "w") do |file|
-  file.write ERB.new(template).result(binding)
+  file.write ERB.new(template, 0, ">").result(binding)
 end

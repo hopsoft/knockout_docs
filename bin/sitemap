@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require "erb"
+
+@pages = ["index.html"]
+path = File.expand_path("../../docco/*", __FILE__)
+Dir.glob(path).each do |version_dir|
+  version = version_dir[version_dir.rindex("/") + 1..-1]
+  Dir.glob(File.join(version_dir, "*.html")).each do |entry|
+    @pages << "docco/#{version}/#{entry[entry.rindex("/") + 1..-1]}"
+  end
+end
+
+template = File.read(File.expand_path("../../sitemap.xml.erb", __FILE__))
+File.open(File.expand_path("../../sitemap.xml", __FILE__), "w") do |file|
+  file.write ERB.new(template, 0, ">").result(binding)
+end
